@@ -1,7 +1,11 @@
 name: Run Hello Script
 
 on:
-  workflow_dispatch:  # manual trigger
+  workflow_dispatch:  # manual 
+  
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # ← add this
+
 
 jobs:
   run:
